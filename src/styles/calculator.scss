@@ -1,0 +1,27 @@
+$white: #ffffff;
+$grey: #dddddd;
+
+body, html {
+    background-color:$white;
+    margin: 0;
+    padding: 0;
+}
+.calculatorWrapper { 
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
+}
+
+.calculator{
+    background-color:$grey;
+    margin-top:100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:10px;
+    border-radius: 10px;
+}
