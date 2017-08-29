@@ -3,16 +3,54 @@
 <head>
 
 <link rel="stylesheet" type="text/css" href="styles/calculator.css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
 <title>Simple Javascript Calculator</title>
 </head>
 
 <body>
     <div class="calculatorWrapper">
-        <br>
-        <br>
-        <div class="calculator">Testing This is a test</div>
-
+        <div class="calculator">
+            <div class="inputBarHolder">
+                <input class="inputBar" type="text" maxlength="40" size="22" name="display">
+            </div>
+            <div class="buttonArea">
+                <div class="numberButtons">
+                    <div class="numberBlock">
+                            <input class="buttonNumber" type="button" value="7">
+                            <input class="buttonNumber" type="button" value="8">
+                            <input class="buttonNumber" type="button" value="9">
+                    </div>
+                    <div class="numberBlock">
+                            <input class="buttonNumber" type="button" value="4">
+                            <input class="buttonNumber" type="button" value="5">
+                            <input class="buttonNumber" type="button" value="6">
+                    </div>
+                    <div class="numberBlock">
+                            <input class="buttonNumber" type="button" value="1">
+                            <input class="buttonNumber" type="button" value="2">
+                            <input class="buttonNumber" type="button" value="3">
+                    </div>
+                    <div class="numberBlock">
+                            <input class="buttonNumber" type="button" value="+/-">
+                            <input class="buttonNumber" type="button" value="0">
+                            <input class="buttonNumber" type="button" value=".">
+                    </div>
+                </div>
+            </div>
+            <div class="modifierBlock">
+                    <input class="buttonModifier" type="button" value="*">
+                    <input class="buttonModifier" type="button" value="/">
+                    <input class="buttonModifier" type="button" value="+">
+                    <input class="buttonModifier" type="button" value="-">
+            </div>
+            <div class="functionBlock">
+                    <input class="buttonFunction" type="button" value="C">
+                    <input class="buttonFunction" type="button" value="AC">
+                    <input class="buttonFunction exponentSize" type="button" value="EXP">
+                    <input class="buttonFunction" type="button" value="=">
+            </div>
+        </div>
     </div>
 
 </body>
