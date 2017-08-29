@@ -5,9 +5,11 @@ $font-color: #397000;
 $white: #ffffff;
 $grey: #dddddd;
 $orange: #FFA500;
+$brown: #A52A2A;
+$black: #212020;
 
 body, html {
-    background-color:$white;
+    background-color:$black;
     margin: 60px 0 0 0;
     padding: 0;
 }
@@ -70,6 +72,7 @@ body, html {
     font: $font-stack-buttons;
     border-width:1;
     width:50px;
+    height:50px;
     padding:10px;
     margin-right:10px;
     background-color: $grey;
@@ -95,7 +98,8 @@ body, html {
     height:50px;
     padding:10px;
     margin: 5px 10px 5px 15px;
-    background-color: $orange;
+    background-color: $brown;
+    color:$white;
     text-align:center;
     line-height:1.3em;
     font-weight:800;
