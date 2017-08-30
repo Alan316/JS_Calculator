@@ -4,7 +4,6 @@
 
 <link rel="stylesheet" type="text/css" href="styles/calculator.css">
 <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-<script type="text/javascript" src="scripts/calculator.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,32 +11,33 @@
 </head>
 
 <body>
+    <FORM name="CalculatorForm">
     <div class="calculatorWrapper">
         <div class="calculator">
             <div class="inputBarHolder">
-                <input class="inputBar" type="text" maxlength="40" size="22" name="display">
+                <input class="inputBar" type="text" maxlength="22" size="22" name="display" id="Display">
             </div>
             <div class="buttonArea">
                 <div class="numberButtons">
                     <div class="numberBlock">
-                            <input class="buttonNumber" type="button" value="7" name="seven">
-                            <input class="buttonNumber" type="button" value="8" name="eight">
-                            <input class="buttonNumber" type="button" value="9" name="nine">
+                            <input class="buttonNumber" type="button" value="7" name="seven" OnClick="AddDigit('7')">
+                            <input class="buttonNumber" type="button" value="8" name="eight" OnClick="AddDigit('8')">
+                            <input class="buttonNumber" type="button" value="9" name="nine" OnClick="AddDigit('9')">
                     </div>
                     <div class="numberBlock">
-                            <input class="buttonNumber" type="button" value="4" name="four">
-                            <input class="buttonNumber" type="button" value="5" name="five">
-                            <input class="buttonNumber" type="button" value="6" name="six">
+                            <input class="buttonNumber" type="button" value="4" name="four" OnClick="AddDigit('4')">
+                            <input class="buttonNumber" type="button" value="5" name="five" OnClick="AddDigit('5')">
+                            <input class="buttonNumber" type="button" value="6" name="six" OnClick="AddDigit('6')">
                     </div>
                     <div class="numberBlock">
-                            <input class="buttonNumber" type="button" value="1" name="one">
-                            <input class="buttonNumber" type="button" value="2" name="two">
-                            <input class="buttonNumber" type="button" value="3" name="three">
+                            <input class="buttonNumber" type="button" value="1" name="one" OnClick="AddDigit('1')">
+                            <input class="buttonNumber" type="button" value="2" name="two" OnClick="AddDigit('2')">
+                            <input class="buttonNumber" type="button" value="3" name="three" OnClick="AddDigit('3')">
                     </div>
                     <div class="numberBlock">
                             <input class="buttonNumber" type="button" value="+/-">
-                            <input class="buttonNumber" type="button" value="0">
-                            <input class="buttonNumber" type="button" value=".">
+                            <input class="buttonNumber" type="button" value="0" OnClick="AddDigit('0')">
+                            <input class="buttonNumber" type="button" value="." OnClick="AddDigit('.')">
                     </div>
                 </div>
             </div>
@@ -55,7 +55,10 @@
             </div>
         </div>
     </div>
+    </FORM>
 
 </body>
+
+<script type="text/javascript" src="scripts/calculator.min.js"></script>
 
 </html>
