@@ -54,19 +54,19 @@ if (Current.indexOf("e") == -1 )
 
 function PlusMinus()
  {
-  if  (Current.indexOf("e") != -1)  //if there is an exponent:
+  if  (Current.indexOf("e") != -1)  //Checking for the exponent
     { 
         var epos = Current.indexOf("e-");
         if (epos != -1)
          {
-            Current = Current.substring(0,1+epos) + Current.substring(2+epos); //clip -ve exp 
+            Current = Current.substring(0,1+epos) + Current.substring(2+epos);
          } 
             else
          { 
             epos = Current.indexOf("e");
-            Current = Current.substring(0,1+epos) + "-" + Current.substring(1+epos); //insert
+            Current = Current.substring(0,1+epos) + "-" + Current.substring(1+epos);
          }
-    } else                         //there is NO exponent:
+    } else                          //no ecponent           
     {  
         if ( Current.indexOf("-") === 0 )
          { 
