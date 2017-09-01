@@ -6,12 +6,12 @@
 <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<meta name="viewport" content="width=300px, initial-scale=2">-->
 
 <title>Simple Javascript Calculator</title>
 </head>
 
 <body>
-    <FORM name="CalculatorForm">
     <div class="calculatorWrapper">
         <div class="calculator">
             <div class="inputBarHolder">
@@ -35,9 +35,9 @@
                             <input class="buttonNumber" type="button" value="3" name="three" OnClick="AddDigit('3')">
                     </div>
                     <div class="numberBlock">
-                            <input class="buttonNumber" type="button" value="+/-">
+                            <input class="buttonNumber" type="button" value="+/-" onClick="PlusMinus('-')">
                             <input class="buttonNumber" type="button" value="0" OnClick="AddDigit('0')">
-                            <input class="buttonNumber" type="button" value="." OnClick="AddDigit('.')">
+                            <input class="buttonNumber" type="button" value="." OnClick="decPoint('.')">
                     </div>
                 </div>
             </div>
@@ -50,12 +50,11 @@
             <div class="functionBlock">
                     <input class="buttonFunction" type="button" value="C">
                     <input class="buttonFunction" type="button" value="AC">
-                    <input class="buttonFunction exponentSize" type="button" value="EXP">
+                    <input class="buttonFunction exponentSize" type="button" value="EXP" onClick="exponent();">
                     <input class="buttonFunction" type="button" value="=">
             </div>
         </div>
     </div>
-    </FORM>
 
 </body>
 
