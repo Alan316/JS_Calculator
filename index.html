@@ -15,7 +15,7 @@
     <div class="calculatorWrapper">
         <div class="calculator">
             <div class="inputBarHolder">
-                <input class="inputBar" value="0" type="text" maxlength="22" size="22" name="display" id="Display">
+                <input class="inputBar"  type="text" maxlength="22" size="22" name="display" id="Display">
             </div>
             <div class="buttonArea">
                 <div class="numberButtons">
@@ -48,8 +48,8 @@
                     <input class="buttonModifier" type="button" value="-">
             </div>
             <div class="functionBlock">
-                    <input class="buttonFunction" type="button" value="C">
-                    <input class="buttonFunction" type="button" value="AC">
+                    <input class="buttonFunction" type="button" value="C" OnClick="ClearDisp();">
+                    <input class="buttonFunction" type="button" value="AC" OnClick="AllClear();">
                     <input class="buttonFunction exponentSize" type="button" value="EXP" onClick="exponent();">
                     <input class="buttonFunction" type="button" value="=">
             </div>
