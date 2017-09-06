@@ -80,7 +80,7 @@ function PlusMinus()
     document.getElementById("Display").value = CurrentDisp; 
  }
 
-function ClearDisp()        //Clear Current Entry
+function ClearDisp()        //Clear CurrentDisp Entry
  { CurrentDisp = "";
  document.getElementById("Display").value = CurrentDisp;
  }
@@ -91,3 +91,32 @@ function AllClear()         //Clear all entries including operation and memory
    Memory = "0";                 
    document.getElementById("Display").value = CurrentDisp;
  }
+
+ function Operations(op)           
+ {
+  if (op.indexOf("*") > -1) { Operation = 1; }       //multiply
+  if (op.indexOf("/") > -1) { Operation = 2; }       //divide
+  if (op.indexOf("+") > -1) { Operation = 3; }       //add
+  if (op.indexOf("-") > -1) { Operation = 4; }       //subtrack
+
+  Memory = CurrentDisp;                 
+  CurrentDisp = "";                     
+  document.getElementById("Display").value = CurrentDisp;
+ }
+
+ function Calculate()            
+ {
+ var MemoryObject = parseInt(Memory);
+ var CurrentObject = parseInt(CurrentDisp); 
+ console.log (Memory + CurrentDisp);
+    if (Operation == 1) { CurrentDisp = (MemoryObject * CurrentObject);}
+    if (Operation == 2) { CurrentDisp = (MemoryObject / CurrentObject);}
+    if (Operation == 3) { CurrentDisp = (MemoryObject + CurrentObject);}
+    if (Operation == 4) { CurrentDisp = (MemoryObject - CurrentObject);}
+  Operation = 0;                
+  Memory    = "0";         
+  document.getElementById("Display").value = CurrentDisp;
+ }
+ 
+
+ 
