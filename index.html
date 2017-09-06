@@ -42,16 +42,16 @@
                 </div>
             </div>
             <div class="modifierBlock">
-                    <input class="buttonModifier" type="button" value="*">
-                    <input class="buttonModifier" type="button" value="/">
-                    <input class="buttonModifier" type="button" value="+">
-                    <input class="buttonModifier" type="button" value="-">
+                    <input class="buttonModifier" type="button" value="*" OnClick="Operations('*');">
+                    <input class="buttonModifier" type="button" value="/" OnClick="Operations('/');">
+                    <input class="buttonModifier" type="button" value="+" OnClick="Operations('+');">
+                    <input class="buttonModifier" type="button" value="-" OnClick="Operations('-');">
             </div>
             <div class="functionBlock">
                     <input class="buttonFunction" type="button" value="C" OnClick="ClearDisp();">
                     <input class="buttonFunction" type="button" value="AC" OnClick="AllClear();">
                     <input class="buttonFunction exponentSize" type="button" value="EXP" onClick="exponent();">
-                    <input class="buttonFunction" type="button" value="=">
+                    <input class="buttonFunction" type="button" value="=" OnClick="Calculate();">
             </div>
         </div>
     </div>
