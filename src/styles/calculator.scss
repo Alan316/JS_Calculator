@@ -108,3 +108,9 @@ body, html {
 .exponentSize{
     font-weight:600;
 }
+
+@media only screen and (max-width: 500px) {
+    .function-block{
+        display:none;
+    }
+}
