@@ -10,7 +10,7 @@ $black: #212020;
 
 body, html {
     background-color:$black;
-    margin: 120px 0 0 0;
+    margin-top: 120px;
     padding: 0;
 }
 .calculatorWrapper { 
@@ -109,12 +109,17 @@ body, html {
     font-weight:600;
 }
 
-@media only (min-width: 600px) {
-    .function-block{
+@media only screen and (max-width: 600px) {
+    .buttonFunction{
         display:none;
     }
 
     .inputBar{
-        width:15px;
+        width:250px;
+    }
+
+    .calculator{
+        width:90%;
+        margin-top:0px;
     }
 }
