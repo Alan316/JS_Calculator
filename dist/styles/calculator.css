@@ -43,7 +43,7 @@ body, html {
 
 .numberButtons {
   padding: 2px;
-  margin: 4px;
+  margin-top: 4px;
   float: left; }
 
 .numberBlock {
@@ -57,6 +57,10 @@ body, html {
 .functionBlock {
   width: 50px;
   display: inline-block; }
+
+.functionBlock2 {
+  width: 100%;
+  display: none; }
 
 .buttonNumber {
   font: Arial, sans-serif;
@@ -95,16 +99,36 @@ body, html {
   font-weight: 800;
   font-size: 1.1em; }
 
+.buttonFunction2 {
+  font: Arial, sans-serif;
+  border-width: 1;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 5px 10px 5px 2px;
+  background-color: #A52A2A;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.3em;
+  font-weight: 800;
+  font-size: 1.1em; }
+
 .exponentSize {
   font-weight: 600; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 360px) {
   .buttonFunction {
     display: none; }
   .inputBar {
     width: 250px; }
   .calculator {
     width: 90%;
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  .functionBlock {
+    display: none; }
+  .functionBlock2 {
+    display: inline-block; }
+  .calculator {
+    text-align: center; } }
 
 /*# sourceMappingURL=calculator.css.map */

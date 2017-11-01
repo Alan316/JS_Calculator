@@ -19,7 +19,14 @@
             <div class="inputBarHolder">
                 <input class="inputBar"  type="text" maxlength="22" size="22" name="display" id="Display">
             </div>
+            
             <div class="buttonArea">
+                    <div class="functionBlock2">
+                            <input class="buttonFunction2" type="button" value="C" OnClick="ClearDisp();">
+                            <input class="buttonFunction2" type="button" value="AC" OnClick="AllClear();">
+                            <input class="buttonFunction2 exponentSize" type="button" value="EXP" onClick="exponent();">
+                            <input class="buttonFunction2" type="button" value="=" OnClick="Calculate();">
+                    </div>
                 <div class="numberButtons">
                     <div class="numberBlock">
                             <input class="buttonNumber" type="button" value="7" name="seven" OnClick="AddDigit('7')">
